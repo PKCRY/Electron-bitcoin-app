@@ -2,7 +2,7 @@ const electron = require('electron')
 const path = require('path')
 const BrowserWindow = electron.remote.BrowserWindow
 
-const notifyBtn = document.getElementById('notifyBtn')
+const notifyBtn = document.getElementById('notifyBitcoin')
 console.log(notifyBtn)
 notifyBtn.addEventListener('click', function (event) {
     console.log(__dirname)

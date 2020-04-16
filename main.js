@@ -12,7 +12,9 @@ function createWindow () {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    webPreferences: {preload: path.join(__dirname, 'preload.js')}
+    webPreferences: {
+      nodeIntegration: true,
+    }
   });
   // and load the index.html of the app.
   win.loadFile('source/index.html')
