@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="../css/styles.css"
+  </head>
+  <body>
+    <div class="row">
+      <div id="price-container">
+        <p class="subtext">Current BitCoin Price USD</p>
+        <h1 id="price">Loading...</h1>
+      </div>
+      <div id="right-container">
+        <button id="notifyBitcoin">Notify me when...</button>
+    </div>
+      
+    <!-- You can also require other files to run in this process -->
+    <script src="index.js"></script>
+  </body>
+</html>
