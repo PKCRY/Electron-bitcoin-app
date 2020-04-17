@@ -2,6 +2,7 @@
 const {app, BrowserWindow, Menu, App} = require('electron')
 const path = require('path')
 const {shell} = require('electron').shell
+const ipc = require('electron').ipcMain
 
 require('electron-reload')(__dirname)
 
@@ -12,6 +13,7 @@ function createWindow () {
   win = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: path.join(__dirname, 'assets/icons/mac/icon.icns'),
     webPreferences: {
       nodeIntegration: true,
     }
@@ -214,3 +216,7 @@ const template = [
   }
   const menu = Menu.buildFromTemplate(template)
   Menu.setApplicationMenu(menu)
+
+  ipc.on('update-notify-value', function(event, arg){
+    win.webContents.send('targetPriceVal', arg)
+  })

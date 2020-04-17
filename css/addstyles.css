@@ -1,11 +1,13 @@
 body {
-    background:#DFDFDF;
-    color:#000;
-    overflow:hidden;
+    background: #262626;
+    color:#fff;
+    font-family: 'Roboto';
+    margin:0;
+    overflow: hidden;
 }
 
 p.notify {
-    background:#C3C3C3;
+    background:#1A1A1A;
     margin:0;
     padding: 20px;
     text-transform:uppercase;
@@ -27,4 +29,9 @@ input {
     cursor:pointer;
     padding:20px;
     text-decoration:underline;
+}
+
+html, body {
+    background: rgb(26, 26, 26, 0.5);
+    height: 100%;
 }
