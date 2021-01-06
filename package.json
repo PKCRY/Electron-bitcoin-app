@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "node-notifier": "^7.0.0",
     "electron": "^8.2.3",
     "electron-packager": "^14.2.1",
